@@ -1,0 +1,80 @@
+/* Estilos personalizados para el look "Streaming nocturno" */
+
+/* --- fondo y texto de toda la pagina --- */
+body {
+    background-color: #141414;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --- barra de navegacion de arriba --- */
+.navbar {
+    background-color: #000000 !important;
+}
+
+/* --- nombre de la marca "NESFLIS DEL CESUN" --- */
+.navbar-brand {
+    color: #E50914 !important; /* Rojo estilo Netflix */
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+/* --- cuadrado de la peli (tarjeta) --- */
+.movie-card {
+    background-color: #181818;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* --- efecto zoom al pasar el mouse por la pelicula --- */
+.movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6);
+    z-index: 10;
+}
+
+/* --- imagen (poster) dentro de la tarjeta --- */
+.movie-card img {
+    border-top-left-radius: var(--bs-card-inner-border-radius);
+    border-top-right-radius: var(--bs-card-inner-border-radius);
+    height: 350px;
+    object-fit: cover;
+}
+
+/* --- estilos para que los modales tambien sean oscuros --- */
+.modal-content {
+    background-color: #181818;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+.modal-header {
+    border-bottom: 1px solid #333;
+}
+
+.modal-footer {
+    border-top: 1px solid #333;
+}
+
+/* --- boton rojo de reproducir --- */
+.btn-stream {
+    background-color: #E50914;
+    color: white;
+    border: none;
+}
+
+.btn-stream:hover {
+    background-color: #b20710;
+    color: white;
+}
+
+/* --- texto gris apagado, se usa en fechas y datos secundarios --- */
+.text-muted-custom {
+    color: #aaa;
+}
+
+/* --- leyenda de pie de pagina con el nombre del alumno --- */
+footer {
+    font-size: 0.9rem;
+}

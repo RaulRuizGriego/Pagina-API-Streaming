@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CESUN Universidad</title>
+
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesLogin.css">
+</head>
+<body>
+
+    <!-- ===================== -->
+    <!-- DIV LOGIN              -->
+    <!-- ===================== -->
+    <div id="login-screen">
+        <div class="login-wrapper">
+            <div class="card login-card">
+                <div class="card-body p-4">
+                    <h3 class="text-center mb-4">Iniciar sesión</h3>
+
+                    <form id="login-form" novalidate>
+                        <div class="mb-3">
+                            <label for="usuario" class="form-label">Usuario / Correo electrónico</label>
+                            <input type="text" class="form-control" id="usuario" placeholder="admin">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="contrasenia" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="contrasenia" placeholder="••••••••">
+                        </div>
+
+                        <div id="login-error" class="alert alert-danger d-none" role="alert"></div>
+
+                        <button type="submit" class="btn btn-primary w-100">Ingresar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================== -->
+    <!-- MODAL DE VALIDACIÓN   -->
+    <!-- ===================== -->
+    <div class="modal fade" id="modalAlerta" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Aviso</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body" id="modalAlertaMensaje">
+                    <!-- Mensaje dinámico -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================== -->
+    <!-- DIV APLICACIÓN PRINCIPAL -->
+    <!-- ===================== -->
+    <div id="app-main" style="display: none;">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">CESUN Universidad</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+
+                    <li class="nav-item ms-lg-3">
+                        <button id="logout-btn" class="btn btn-outline-light btn-sm">Cerrar sesión</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>Universidad CESUN</h1>
+            <p>Actividad de Diseño Responsivo con Bootstrap</p>
+        </div>
+    </section>
+
+    <!-- Contenido -->
+    <div class="container mt-4">
+        <div class="row">
+
+            <!-- Cards -->
+            <div class="col-12 col-md-8">
+                <div class="row g-4">
+
+                    <div class="col-12 col-lg-4">
+                        <div class="card h-100">
+                            <img src="https://picsum.photos/300/200?1" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Diseño Web</h5>
+                                <p class="card-text">
+                                    Desarrollo de interfaces modernas utilizando Bootstrap.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4">
+                        <div class="card h-100">
+                            <img src="https://picsum.photos/300/200?2" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Responsive</h5>
+                                <p class="card-text">
+                                    Adaptación automática del contenido a diferentes pantallas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4">
+                        <div class="card h-100">
+                            <img src="https://picsum.photos/300/200?3" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Bootstrap</h5>
+                                <p class="card-text">
+                                    Uso del sistema de rejilla y componentes responsivos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-12 col-md-4 mt-4 mt-md-0">
+                <div class="sidebar">
+                    <h4>Datos del Alumno</h4>
+                    <p><strong>Nombre:</strong> Raul Ruiz Griego</p>
+                    <p><strong>Matrícula:</strong> 2403230109</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>CESUN Universidad - FrontEnd 2026</p>
+    </footer>
+
+    </div> <!-- /#app-main -->
+
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="scriptlogin.js"></script>
+
+</body>
+</html>

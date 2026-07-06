@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo de la pestaña del navegador -->
+    <title>Nesflis del Cesun</title>
+    <!-- CSS de Bootstrap 5 -->
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Nuestro CSS personalizado -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark mb-4 shadow">
+        <div class="container">
+            <!-- Nombre de la marca de la pagina -->
+            <a class="navbar-brand" href="#">NESFLIS DEL CESUN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Películas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Series</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Mi Lista</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenedor Principal de Películas -->
+    <main class="container my-5">
+        <h2 class="mb-4">Películas Tendencia</h2>
+
+        <!-- Aqui la pagina esta vacia a proposito, las tarjetas de peliculas -->
+        <!-- se crean solitas con JavaScript jalando la info desde la API -->
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4" id="contenedor-peliculas">
+            <!-- aqui caen las tarjetas generadas por script.js -->
+        </div>
+    </main>
+
+    <!-- ================= MODALES DE INFORMACIÓN ================= -->
+    <!-- Este div empieza vacio, script.js mete aqui un modal por cada pelicula -->
+    <div id="contenedor-modales"></div>
+
+    <!-- Leyenda de pie de pagina con el nombre del alumno -->
+    <footer class="text-center text-muted-custom py-4">
+        <p class="mb-0">Raul Ruiz Griego 06IDPRMA</p>
+    </footer>
+
+    <!-- JS de Bootstrap 5 -->
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- Nuestro JS personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
