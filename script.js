@@ -1,4 +1,6 @@
-// --- Direccion donde vive la API, si cambias el puerto en uvicorn, cambialo aqui tambien ---
+// --- Raul Ruiz Griego 60IDPRMA ---
+// --- Fecha de entrega: 08/07/2026 ---
+// --- Direccion APi---
 const API_URL = "http://127.0.0.1:8000/api/peliculas";
 
 // Esperar a que el DOM esté completamente cargado antes de ejecutar código

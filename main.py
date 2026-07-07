@@ -61,7 +61,7 @@ DB_PELICULAS = [
         "titulo": "Interestelar",
         "categoria": "Ciencia Ficción",
         "anio": 2014,
-        "poster": "/imgs/interestelar.jpg",
+        "poster": "/imgs/Interestelar.jpg",
         "match": 95,
         "clasificacion": "13+",
         "duracion": "2 h 49 min",
@@ -134,8 +134,21 @@ DB_PELICULAS = [
         "sinopsis": "En 1980, el refugiado cubano Tony Montana llega a Miami sin nada y rápidamente asciende en el inframundo criminal para convertirse en un poderoso y despiadado capo de la droga, pero su propia ambición y paranoia amenazan su imperio.",
         "elenco": "Al Pacino, Michelle Pfeiffer, Steven Bauer.",
         "director": "Brian De Palma"
-    }
-    
+    },
+    {
+        "id": 8,
+        "titulo": "El cordinador",
+        "categoria": "Crimen / Drama",
+        "anio": 1972,
+        "poster": "/imgs/El cordinador.jpg",
+        "match": 97,
+        "clasificacion": "18+",
+        "duracion": "2 h 55 min",
+        "sinopsis": "El envejecido patriarca de una dinastía del crimen organizado transfiere el control de su imperio clandestino a su hijo menor, quien se ve obligado a adentrarse en el violento mundo mafioso para proteger a su familia.",
+        "elenco": "Marlon Brando, Al Pacino, James Caan.",
+        "director": "Francis Ford Coppola"
+}
+
 ];
 
 #Devuelve las peliculas

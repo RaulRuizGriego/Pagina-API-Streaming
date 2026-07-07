@@ -1,8 +1,8 @@
+// --- Raul Ruiz Griego 60IDPRMA ---
+// --- Fecha de entrega: 08/07/2026 ---
 console.log("Proyecto CESUN cargado correctamente");
 
-// ============================================
 // REFERENCIAS A ELEMENTOS DEL DOM
-// ============================================
 const loginScreen = document.getElementById("login-screen");
 const loginForm = document.getElementById("login-form");
 const inputUsuario = document.getElementById("usuario");
@@ -16,18 +16,12 @@ const modalAlerta = new bootstrap.Modal(modalAlertaEl);
 // Credenciales estáticas (hardcoded)
 const USUARIO_VALIDO = "admin";
 const CONTRASENIA_VALIDA = "12345";
-
-// ============================================
 // FUNCIÓN: Mostrar modal de alerta
-// ============================================
 function mostrarAlerta(mensaje) {
     modalAlertaMensaje.textContent = mensaje;
     modalAlerta.show();
 }
-
-// ============================================
 // FUNCIÓN: Manejo del error en línea
-// ============================================
 function ocultarErrorLogin() {
     loginErrorBox.classList.add("d-none");
     loginErrorBox.textContent = "";
@@ -38,9 +32,7 @@ function mostrarErrorLogin(mensaje) {
     loginErrorBox.classList.remove("d-none");
 }
 
-// ============================================
 // PASO 2: VALIDACIÓN Y ACCESO ESTÁTICO
-// ============================================
 loginForm.addEventListener("submit", function (e) {
     e.preventDefault();
     ocultarErrorLogin();
